@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+body {
+    background-color: #141019;
+    /* background: radial-gradient(at 50% -20%, #b34d1e, #29ac50) fixed; */
+    /* background: #443258; */
+    background: 70deg,#7f00ff,#7f00ff;
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body a .container{
+      position: relative;
+      height: max-content;
+      width: 70vw;
+  }
+  
+  #handboy {
+    animation: swing ease-in-out 1.3s infinite alternate;
+    transform-origin: 98% 98%;
+    transform-box: fill-box;
+  }
+  
+  #girllight {
+    animation: swing ease-in-out 1.3s infinite alternate;
+    transform-origin: 0% 97%;
+    transform-box: fill-box;
+  }
+  
+  #hairgirl {
+    animation: swinghair ease-in-out 1.3s infinite alternate;
+    transform-origin: 60% 0%;
+    transform-box: fill-box;
+  }
+  
+  #zero {
+    transform-origin: bottom;
+    transform-box: fill-box;
+  }
+  
+  /*************swing************/
+  @keyframes swing {
+    0% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(-10deg);
+    }
+  }
+  
+  /*************swing hair************/
+  @keyframes swinghair {
+    0% {
+      transform: rotate(6deg);
+    }
+    100% {
+      transform: rotate(-6deg);
+    }
+  }
+body h1{
+    color: #ddd4d4;
+    font-size: 2em ;
+    margin: 10px;
+    width: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px #00ccff,
+    0 0 20px #00ccff;
+    border-radius: 25px;
+}
+body h2{
+    color: #178363;
+    font-size: 1.875rem;
+    width: 100vw;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    
+}
+.ion-icon{
+    color: rgb(255, 68, 68);
+    font-size: 2.35rem;
+    margin-left: 1rem;
+}
